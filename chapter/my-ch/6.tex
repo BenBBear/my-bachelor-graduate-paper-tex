@@ -1,0 +1,363 @@
+\chapter{系统测试}
+
+\section{测试环境和总体方案}
+
+测试方案：
+
+
+\subsection{系统功能性测试}
+  系统的手机端并没有完全完成， 所以功能性测试主要针对于 Web管理端。 功能分为：
+
+  \begin{itemize}
+  \item 学校的创建，修改 （删除功能暂时没有实现）
+  \item 班级的创建，删除，修改
+  \item 网盘，相册操作
+  \item 教师，学生的邀请， 转班， 删除
+  \item 帮手的邀请，修改，删除
+  \end{itemize}
+
+  \textbf{测试环境为}: Mac osx 10.10, Chrome 39
+
+\subsection{系统界面测试}
+
+  分为PC端测试， 和手机端测试
+
+  \textbf{PC端测试环境}:  Mac osx 10.10, Chrome 39
+
+  \textbf{Mobile端测试环境}: iphone5s
+
+
+
+
+
+
+
+
+\section{系统功能测试}
+
+\subsection{学校的创建，修改}
+
+\begin{table}[H]
+  \centering
+  \caption{学校的创建}
+  \label{tab:1}
+  \begin{tabular}{cc}
+    \toprule
+    测试名称 & 学校的创建  \\
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    测试人 & 张鑫语 \\
+    测试日期 & 2015-05-11 \\
+
+    \midrule
+    测试步骤 		& 点击左边Panel的加号， 输入学校数据 \\
+    \midrule
+    输入数据 		& 学校名: 测试学校， 学校介绍: 测试学校介绍 \\
+    预期结果 		& 测试学校被创建 \\
+    实际结果             & 与预期结果完全一致 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+  \centering
+  \caption{学校的修改}
+  \label{tab:2}
+  \begin{tabular}{cc}
+    \toprule
+    测试名称 & 学校的修改  \\
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    测试人 & 张鑫语 \\
+    测试日期 & 2015-05-11 \\
+
+    \midrule
+    测试步骤 		& 点击相关学校， 之后点击详细信息 \\
+    \midrule
+    输入数据 		&  修改学校名为: 测试学校修改， 学校介绍: 测试学校介绍 \\
+    预期结果 		& 测试学校被修改 \\
+    实际结果             & 与预期结果完全一致 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\subsection{班级的创建，修改}
+
+\begin{table}[H]
+  \centering
+  \caption{班级的创建}
+  \label{tab:3}
+  \begin{tabular}{cc}
+    \toprule
+    测试名称 & 班级的创建  \\
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    测试人 & 张鑫语 \\
+    测试日期 & 2015-05-11 \\
+
+    \midrule
+    \multirow{2}{*}{测试步骤}
+             & 点击测试学校，之后点击右边Panel上的加号 \\
+             & 在出现的创建Panel中输入班级数据 \\
+
+    \midrule
+    输入数据 		& 班级名: 测试班级， 班级介绍: 测试班级介绍 \\
+    预期结果 		& 测试班级被创建 \\
+    实际结果             & 与预期结果完全一致 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \caption{班级的修改}
+  \label{tab:4}
+  \begin{tabular}{cc}
+    \toprule
+    测试名称 & 班级的创建  \\
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    测试人 & 张鑫语 \\
+    测试日期 & 2015-05-11 \\
+
+    \midrule
+    \multirow{2}{*}{测试步骤} 		& 点击测试学校，之后点击右边Panel上的加号 \\
+    & 在出现的创建Panel中输入班级数据 \\
+
+    \midrule
+    输入数据 		& 班级名: 测试班级， 班级介绍: 测试班级介绍 \\
+    预期结果 		& 测试班级被创建 \\
+    实际结果             & 与预期结果完全一致 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\subsection{网盘，相册操作}
+
+\begin{table}[H]
+  \centering
+  \caption{网盘操作}
+  \label{tab:5}
+  \begin{tabular}{cc}
+    \toprule
+    测试名称 & 网盘操作  \\
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    测试人 & 张鑫语 \\
+    测试日期 & 2015-05-11 \\
+
+    \midrule
+    \multirow{3}{*}{测试步骤} 		& 点击测试学校， 在右边Panel选择文件管理， 之后点击根文件夹 \\
+             & 在右下边Panel点击新建， 新建成功后， 修改文件信息并提交 \\
+             & 之后点击删除（都在右下部Panel） \\
+
+    \midrule
+    输入数据 		& 任意文件 \\
+    预期结果 		& 可以在网盘内新建，修改，删除文件 \\
+    实际结果             & 与预期结果完全一致 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+  \centering
+  \caption{相册操作}
+  \label{tab:6}
+  \begin{tabular}{cc}
+    \toprule
+    测试名称 & 相册操作  \\
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    测试人 & 张鑫语 \\
+    测试日期 & 2015-05-11 \\
+
+    \midrule
+    \multirow{3}{*}{测试步骤} 		& 点击测试学校， 在右边Panel选择相册， 在右下边Panel点击上传 \\
+             & 上传图片成功后，选中图片并修改信息后提交 \\
+             &之后点击右下角红色按钮：删除选中图片 \\
+
+    \midrule
+    输入数据 		& 任意图片 \\
+    预期结果 		& 可以在相册内新建，修改，删除图片 \\
+    实际结果             & 与预期结果完全一致 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\subsection{教师，学生的邀请，转班，删除}
+
+因为教师和学生管理界面和实现几乎相同， 所以下面统称人员。
+
+
+\begin{table}[H]
+  \centering
+  \caption{人员的邀请}
+  \label{tab:7}
+  \begin{tabular}{cc}
+    \toprule
+    测试名称 & 人员的邀请  \\
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    测试人 & 张鑫语 \\
+    测试日期 & 2015-05-11 \\
+
+    \midrule
+   \multirow{3}{*}{测试步骤} 		& 点击相关学校，在右边班级列表中，点击测试班级 \\
+    & 再点击右边Panel中的教师管理， 之后点击右边Panel的邀请新教师 \\
+      & 然后输入教师电话 \\
+    \midrule
+    输入数据 		& 11位数字 \\
+    预期结果 		& 教师进入该班级 \\
+    实际结果             & 与预期结果完全一致 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \caption{人员的转班}
+  \label{tab:8}
+  \begin{tabular}{cc}
+    \toprule
+    测试名称 & 人员的转班  \\
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    测试人 & 张鑫语 \\
+    测试日期 & 2015-05-11 \\
+
+    \midrule
+    \multirow{3}{*}{测试步骤} 		& 点击相关学校，在右边班级列表中，点击测试班级 \\
+             & 再点击右边Panel中的教师管理，在教师列表中选择一个教师\\
+             &  点击其右边的 Exchange Icon按钮， 然后选择转向的班级 \\
+
+    \midrule
+    输入数据 		& 班级的选择 \\
+    预期结果 		& 教师从本班级移入目标班级 \\
+    实际结果             & 与预期结果完全一致 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+\begin{table}[H]
+  \centering
+  \caption{人员的删除}
+  \label{tab:9}
+  \begin{tabular}{cc}
+    \toprule
+    测试名称 & 人员的删除  \\
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    测试人 & 张鑫语 \\
+    测试日期 & 2015-05-11 \\
+
+    \midrule
+   \multirow{3}{*}{测试步骤} 		& 点击相关学校，在右边班级列表中，点击测试班级 \\
+    & 再点击右边Panel中的教师管理，在教师列表中选择一个教师 \\
+    & 点击其右边的垃圾箱按钮， 然后点击确定 \\
+
+    \midrule
+    输入数据 		& 人员的选择 \\
+    预期结果 		& 教师从本班级中移走 \\
+    实际结果             & 与预期结果完全一致 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+
+
+
+
+\subsection{帮手的邀请，修改，删除}
+
+
+\begin{table}[H]
+  \centering
+  \caption{帮手邀请}
+  \label{tab:11}
+  \begin{tabular}{cc}
+    \toprule
+    测试名称 & 帮手邀请  \\
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    测试人 & 张鑫语 \\
+    测试日期 & 2015-05-11 \\
+
+    \midrule
+    \multirow{2}{*}{测试步骤} 		& 点击最左边导航栏中的 “我的帮手”，  \\
+                                        & 之后在主界面上部输入电话号码，之后点击 “发出邀请” \\
+    \midrule
+    输入数据 		& 11位数字 \\
+    预期结果 		& 下面帮手列表添加了新的帮手 \\
+    实际结果             & 与预期结果完全一致 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+  \centering
+  \caption{帮手修改和删除}
+  \label{tab:12}
+  \begin{tabular}{cc}
+    \toprule
+    测试名称 & 帮手修改和删除  \\
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    测试人 & 张鑫语 \\
+    测试日期 & 2015-05-11 \\
+
+    \midrule
+    \multirow{3}{*}{测试步骤} 		& 点击最左边导航栏中的 “我的帮手”， \\
+             & 之后在主界面中部的帮手列表中， 修改帮手权限 \\
+             & 之后点击提交， 然后点击右上角红色垃圾箱按钮。 \\
+    \midrule
+    输入数据 		& 权限的选择 \\
+    预期结果 		& 提交后显示帮手权限被修改，删除后该帮手不出现在列表中 \\
+    实际结果             & 与预期结果完全一致 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+
+\section{系统界面测试}
+
+
+
+需要测试的系统界面：
+
+\subsection{电脑端}
+
+\begin{itemize}
+\item 学校修改界面
+\item 班级界面
+\item 班级列表界面
+\item 网盘界面
+\item 相册界面
+\item 教师，学生的管理界面
+\item 帮手界面
+\end{itemize}
+
+\subsection{手机端}
+
+\begin{itemize}
+\item 发布状态界面
+\item 浏览状态界面
+\item 聊天界面
+\item 我的班级和学校界面
+\end{itemize}
+
+
+\subsection{测试结果}
+
+经由第五章的系统界面设计截图， 可以得知系统界面符合设计要求， 操作流畅， 为底层功能提供了比较好的UI接口。 具体截图不在这里冗余。
